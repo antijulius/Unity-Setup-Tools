@@ -10,7 +10,7 @@ using static UnityEditor.AssetDatabase;
 
 namespace aj
 {
-	public class ToolsMenu : MonoBehaviour
+	public static class ToolsMenu
 	{
 		[MenuItem("Tools/Setup/Create Default Folders")]
 		public static void CreateDefaultFolders()
