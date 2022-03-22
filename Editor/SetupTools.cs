@@ -43,16 +43,6 @@ namespace aj
 		[MenuItem("Tools/Packages/Get ProBuilder")]
 		static void AddProBuilder() => InstallPackage("probuilder");
 
-		[MenuItem("Tools/Packages/Get All")]
-		static void GetAllPackages()
-		{
-			AddNewInputSystem();
-			AddCinemachine();
-			AddShaderGraph();
-			AddTerrainTools();
-			AddProBuilder();
-		}
-
 		private static void CreateDirectories(string root, params string[] dirs)
 		{
 			var fullPath = Combine(dataPath, root);
