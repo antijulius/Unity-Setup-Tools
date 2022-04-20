@@ -16,7 +16,7 @@ namespace aj
 		public static void CreateDefaultFolders()
 		{
 			CreateDirectories("_Project", "Scripts", "Art", "Scenes", "Ignore");
-			CreateDirectories(Combine("_Project", "Tests"), "EditMode", "PlayMode");
+			// CreateDirectories(Combine("_Project", "Tests"), "EditMode", "PlayMode");
 			Refresh();
 		}
 
@@ -42,6 +42,9 @@ namespace aj
 		
 		[MenuItem("Tools/Packages/Get ProBuilder")]
 		static void AddProBuilder() => InstallPackage("probuilder");
+		
+		[MenuItem("Tools/Packages/Get Pro Grids")]
+		static void AddProBuilder() => InstallPackage("progrids");
 
 		private static void CreateDirectories(string root, params string[] dirs)
 		{
