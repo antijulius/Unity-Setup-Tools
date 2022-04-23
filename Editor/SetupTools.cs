@@ -44,7 +44,7 @@ namespace aj
 		static void AddProBuilder() => InstallPackage("probuilder");
 		
 		[MenuItem("Tools/Packages/Get Pro Grids")]
-		static void AddProBuilder() => InstallPackage("progrids");
+		static void AddProGrids() => InstallPackage("progrids");
 
 		private static void CreateDirectories(string root, params string[] dirs)
 		{
